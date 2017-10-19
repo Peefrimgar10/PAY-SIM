@@ -54,8 +54,4 @@ photonCountAtSensor(15,2);
 
 totalNumberOfPhotons = sum(photonCountAtSensor(:,1));
 
-%set(figure(1), 'FontSize', 25)
-%set(figure(2), 'FontSize', 25)
-%set(h,'FontSize',25)
-
 end
