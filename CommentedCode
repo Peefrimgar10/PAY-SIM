@@ -24,3 +24,11 @@
 
 %% Apply System efficiency (include Grating, Lens, etc.)
 %[wavelengthsAtSensor] = applySystemEfficiency(sysEff,wavelengthsAtLens);
+
+% subplot(2,1,2)
+% h = subplot(2,1,2)
+% bar(photonCountAtSensor(:,2),photonCountAtSensor(:,1),'r'); %Display the model for solar output
+%     title(['Number of photons vs wavelength for Exposure = ', num2str(exposure),'s'],'FontSize', 25);
+%     xlabel('Wavelength (m)','FontSize', 25);
+%     ylabel('Number of photons','FontSize', 25);
+%     axis auto
