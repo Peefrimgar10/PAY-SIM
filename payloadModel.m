@@ -12,9 +12,6 @@ format long
 %% Apply relative flux to the surface area of aperture.
 [FluxAtLens] = applyAperture(RelativeFlux,aperture);
 
-%% Apply System efficiency (include Grating, Lens, etc.)
-%[wavelengthsAtSensor] = applySystemEfficiency(sysEff,wavelengthsAtLens);
-
 %% Apply Grating Efficiency
 [FluxAtCCD] = applyGrating(FluxAtLens);
 
