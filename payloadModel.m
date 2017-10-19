@@ -35,13 +35,6 @@ format long
 %results with what we need to obtain, we can detemrine the minimum size
 %aperture we need, which is the important part for structures.
 
-% subplot(2,1,2)
-% h = subplot(2,1,2)
-% bar(photonCountAtSensor(:,2),photonCountAtSensor(:,1),'r'); %Display the model for solar output
-%     title(['Number of photons vs wavelength for Exposure = ', num2str(exposure),'s'],'FontSize', 25);
-%     xlabel('Wavelength (m)','FontSize', 25);
-%     ylabel('Number of photons','FontSize', 25);
-%     axis auto
 figure(1)
 subplot(2,2,1)
 bar(signal(:,1),signal(:,2),'r');
