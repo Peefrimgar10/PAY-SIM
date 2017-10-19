@@ -1,1 +1,5 @@
+%% Create Proportioned Black Body Spectrum:
+%[proportionedWavelengths,Lam] = UnitBlackBody(binSize, T);
 
+%% Scale the Black Body spectrum using Solar Constant (Solar Irradiance):
+%[FullIrradiance] = applySolarConstant(proportionedWavelengths,Lam,binSize);
