@@ -2,11 +2,6 @@ function payloadModel(wavelengthTop, wavelengthBottom, binSize, apparentMagnitud
 format long
 %% Read Empirical Solar Data
 [TrueIrradiance] = SolarRead();
-%% Create Proportioned Black Body Spectrum:
-%[proportionedWavelengths,Lam] = UnitBlackBody(binSize, T);
-
-%% Scale the Black Body spectrum using Solar Constant (Solar Irradiance):
-%[FullIrradiance] = applySolarConstant(proportionedWavelengths,Lam,binSize);
 
 %% Limit Solar Irradiance Model to Desired Range:
 [IrradianceLimited] = limitIrradiance(TrueIrradiance,wavelengthTop,wavelengthBottom,binSize);
