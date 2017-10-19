@@ -21,3 +21,6 @@
 
 %% Apply Area scale to the band proportions of the target:
 %[wavelengthsAtSORA] = applyMagnitude(bandProportions,avgSpectralIrradiance);
+
+%% Apply System efficiency (include Grating, Lens, etc.)
+%[wavelengthsAtSensor] = applySystemEfficiency(sysEff,wavelengthsAtLens);
