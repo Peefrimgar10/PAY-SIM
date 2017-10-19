@@ -6,24 +6,6 @@ format long
 %% Limit Solar Irradiance Model to Desired Range:
 [IrradianceLimited] = limitIrradiance(TrueIrradiance,wavelengthTop,wavelengthBottom,binSize);
 
-%% Upload a reflectivity curve (from .csv file):
-%[specReflProfile] = processSpecReflProf(specReflProfile,wavelengthTop, wavelengthBottom);
-%CONSIDER GETTING RID OF THIS.  
-
-%% Apply reflectivity profile to solar model:
-%[reflectedSpectrum] = applyRefl(specReflProfile,IrradianceLimited);
-%IF YOU GET RID OF THE ABOVE, GET RID OF THIS ONE TOO.
-
-%% Determine the proportion of each wavelength reflected off the object:
-%[bandProportions] = proportioner(reflectedSpectrum);
-
-%% Read Star Data files:
-%[avgSpectralIrradiance] = importStarData(proportionedWavelengths,apparentMagnitude,wavelengthTop,wavelengthBottom,binSize);
-%FIND A BETTER WAY TO APPLY THE MAGNITUDE TO FLUX CONVERSION.
-
-%% Apply Area scale to the band proportions of the target:
-%[wavelengthsAtSORA] = applyMagnitude(bandProportions,avgSpectralIrradiance);
-
 %% New Magnitude Function, Applies Apparent Magnitude to Each Wavelength Across the Spectrum
 [RelativeFlux] = relativeFlux(IrradianceLimited,apparentMagnitude);
 
