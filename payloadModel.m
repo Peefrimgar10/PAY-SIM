@@ -2,7 +2,6 @@ function payloadModel(wavelengthTop, wavelengthBottom, binSize, apparentMagnitud
 format long
 %% Read Empirical Solar Data
 [TrueIrradiance] = SolarRead();
-MY DUDE EMANUEL, I'm a meme now
 %% Create Proportioned Black Body Spectrum:
 %[proportionedWavelengths,Lam] = UnitBlackBody(binSize, T);
 
